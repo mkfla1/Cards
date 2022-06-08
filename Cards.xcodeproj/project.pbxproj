@@ -105,14 +105,30 @@
 		DC77775A2850B28300D796D6 /* Cards */ = {
 			isa = PBXGroup;
 			children = (
-				DC14214828509E6E001087C3 /* CardsListView.swift */,
-				DC14214A2850A10B001087C3 /* CardThumbnailView.swift */,
-				DC14214C2850AA5D001087C3 /* SingleCardView.swift */,
-				DC77775B2850BBEA00D796D6 /* CardDetailView.swift */,
-				DC77775F2850D43000D796D6 /* CardBottomToolbar.swift */,
+				DC7777622850DCBE00D796D6 /* CardList */,
+				DC7777612850DCAB00D796D6 /* SingleCard */,
 				DC1421512850AF5F001087C3 /* CardsView.swift */,
 			);
 			path = Cards;
+			sourceTree = "<group>";
+		};
+		DC7777612850DCAB00D796D6 /* SingleCard */ = {
+			isa = PBXGroup;
+			children = (
+				DC14214C2850AA5D001087C3 /* SingleCardView.swift */,
+				DC77775B2850BBEA00D796D6 /* CardDetailView.swift */,
+				DC77775F2850D43000D796D6 /* CardBottomToolbar.swift */,
+			);
+			path = SingleCard;
+			sourceTree = "<group>";
+		};
+		DC7777622850DCBE00D796D6 /* CardList */ = {
+			isa = PBXGroup;
+			children = (
+				DC14214828509E6E001087C3 /* CardsListView.swift */,
+				DC14214A2850A10B001087C3 /* CardThumbnailView.swift */,
+			);
+			path = CardList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
