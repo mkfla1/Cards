@@ -19,6 +19,9 @@
 		DC77775C2850BBEA00D796D6 /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC77775B2850BBEA00D796D6 /* CardDetailView.swift */; };
 		DC77775E2850D3D200D796D6 /* CardModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC77775D2850D3D200D796D6 /* CardModal.swift */; };
 		DC7777602850D43100D796D6 /* CardBottomToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC77775F2850D43000D796D6 /* CardBottomToolbar.swift */; };
+		DCC5667D2851D27600302348 /* ResizableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC5667C2851D27600302348 /* ResizableView.swift */; };
+		DCC5667F2851D36B00302348 /* Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC5667E2851D36B00302348 /* Transform.swift */; };
+		DCC566822851D93C00302348 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC566812851D93C00302348 /* Operators.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		DC77775B2850BBEA00D796D6 /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
 		DC77775D2850D3D200D796D6 /* CardModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModal.swift; sourceTree = "<group>"; };
 		DC77775F2850D43000D796D6 /* CardBottomToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBottomToolbar.swift; sourceTree = "<group>"; };
+		DCC5667C2851D27600302348 /* ResizableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizableView.swift; sourceTree = "<group>"; };
+		DCC5667E2851D36B00302348 /* Transform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transform.swift; sourceTree = "<group>"; };
+		DCC566812851D93C00302348 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,7 @@
 		DC14213828509C9E001087C3 /* Cards */ = {
 			isa = PBXGroup;
 			children = (
+				DCC566802851D92D00302348 /* Extensions */,
 				DC14214E2850AC7F001087C3 /* Models */,
 				DC14214728509E53001087C3 /* Views */,
 				DC14213928509C9E001087C3 /* CardsApp.swift */,
@@ -89,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				DC77775A2850B28300D796D6 /* Cards */,
+				DCC5667C2851D27600302348 /* ResizableView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -98,6 +106,7 @@
 			children = (
 				DC14214F2850AC9B001087C3 /* ViewState.swift */,
 				DC77775D2850D3D200D796D6 /* CardModal.swift */,
+				DCC5667E2851D36B00302348 /* Transform.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -129,6 +138,14 @@
 				DC14214A2850A10B001087C3 /* CardThumbnailView.swift */,
 			);
 			path = CardList;
+			sourceTree = "<group>";
+		};
+		DCC566802851D92D00302348 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DCC566812851D93C00302348 /* Operators.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,8 +225,11 @@
 				DC14213A28509C9E001087C3 /* CardsApp.swift in Sources */,
 				DC14214D2850AA5D001087C3 /* SingleCardView.swift in Sources */,
 				DC7777602850D43100D796D6 /* CardBottomToolbar.swift in Sources */,
+				DCC5667D2851D27600302348 /* ResizableView.swift in Sources */,
 				DC14214B2850A10B001087C3 /* CardThumbnailView.swift in Sources */,
+				DCC566822851D93C00302348 /* Operators.swift in Sources */,
 				DC77775E2850D3D200D796D6 /* CardModal.swift in Sources */,
+				DCC5667F2851D36B00302348 /* Transform.swift in Sources */,
 				DC77775C2850BBEA00D796D6 /* CardDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
