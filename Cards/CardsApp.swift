@@ -13,9 +13,8 @@ struct CardsApp: App {
   
   var body: some Scene {
     WindowGroup {
-      ResizableView()
-//      CardsView()
-//        .environmentObject(viewState)
+      CardsView()
+        .environmentObject(viewState)
     }
   }
 }
