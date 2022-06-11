@@ -23,6 +23,7 @@
 		DCC5667D2851D27600302348 /* ResizableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC5667C2851D27600302348 /* ResizableView.swift */; };
 		DCC5667F2851D36B00302348 /* Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC5667E2851D36B00302348 /* Transform.swift */; };
 		DCC566822851D93C00302348 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC566812851D93C00302348 /* Operators.swift */; };
+		DCC982E028532F2C00BF2C2A /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC982DF28532F2C00BF2C2A /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		DCC5667C2851D27600302348 /* ResizableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizableView.swift; sourceTree = "<group>"; };
 		DCC5667E2851D36B00302348 /* Transform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transform.swift; sourceTree = "<group>"; };
 		DCC566812851D93C00302348 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		DCC982DF28532F2C00BF2C2A /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 		DC14213828509C9E001087C3 /* Cards */ = {
 			isa = PBXGroup;
 			children = (
+				DCC982DE28532F2000BF2C2A /* Config */,
 				DC34FFA02853278E00BC4C8E /* Utilities */,
 				DCC566802851D92D00302348 /* Extensions */,
 				DC14214E2850AC7F001087C3 /* Models */,
@@ -159,6 +162,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		DCC982DE28532F2000BF2C2A /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				DCC982DF28532F2C00BF2C2A /* Settings.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -238,6 +249,7 @@
 				DC7777602850D43100D796D6 /* CardBottomToolbar.swift in Sources */,
 				DCC5667D2851D27600302348 /* ResizableView.swift in Sources */,
 				DC34FFA2285327A800BC4C8E /* ViewExtensions.swift in Sources */,
+				DCC982E028532F2C00BF2C2A /* Settings.swift in Sources */,
 				DC14214B2850A10B001087C3 /* CardThumbnailView.swift in Sources */,
 				DCC566822851D93C00302348 /* Operators.swift in Sources */,
 				DC77775E2850D3D200D796D6 /* CardModal.swift in Sources */,
