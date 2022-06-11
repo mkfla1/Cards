@@ -31,17 +31,7 @@ struct CardDetailView: View {
   
   var body: some View {
     content
-      .toolbar {
-        ToolbarItem(placement: .navigationBarTrailing) {
-          Button(action: { viewState.showAllCards.toggle() }) {
-            Text("完成")
-          }
-        }
-        
-        ToolbarItem(placement: .bottomBar) {
-          CardBottomToolbar(cardModal: $cardModal)
-        }
-      }
+      .modifier(CardToolBar(cardModal: $cardModal))
   }
 }
 

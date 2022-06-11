@@ -25,6 +25,7 @@
 		DCC566822851D93C00302348 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC566812851D93C00302348 /* Operators.swift */; };
 		DCC982E028532F2C00BF2C2A /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC982DF28532F2C00BF2C2A /* Settings.swift */; };
 		DCCF239C285476A000DDA2B6 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCF239B285476A000DDA2B6 /* ColorExtensions.swift */; };
+		DCCF239F28547E1900DDA2B6 /* CardToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCF239E28547E1900DDA2B6 /* CardToolBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		DCC566812851D93C00302348 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		DCC982DF28532F2C00BF2C2A /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		DCCF239B285476A000DDA2B6 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		DCCF239E28547E1900DDA2B6 /* CardToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardToolBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +105,8 @@
 		DC14214728509E53001087C3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DCCF239D28547C8200DDA2B6 /* Modifiers */,
 				DC77775A2850B28300D796D6 /* Cards */,
-				DCC5667C2851D27600302348 /* ResizableView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -171,6 +173,15 @@
 				DCC982DF28532F2C00BF2C2A /* Settings.swift */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		DCCF239D28547C8200DDA2B6 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				DCC5667C2851D27600302348 /* ResizableView.swift */,
+				DCCF239E28547E1900DDA2B6 /* CardToolBar.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +261,7 @@
 				DC14213A28509C9E001087C3 /* CardsApp.swift in Sources */,
 				DC14214D2850AA5D001087C3 /* SingleCardView.swift in Sources */,
 				DC7777602850D43100D796D6 /* CardBottomToolbar.swift in Sources */,
+				DCCF239F28547E1900DDA2B6 /* CardToolBar.swift in Sources */,
 				DCC5667D2851D27600302348 /* ResizableView.swift in Sources */,
 				DC34FFA2285327A800BC4C8E /* ViewExtensions.swift in Sources */,
 				DCC982E028532F2C00BF2C2A /* Settings.swift in Sources */,
