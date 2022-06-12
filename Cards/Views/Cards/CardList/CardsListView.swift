@@ -17,6 +17,7 @@ struct CardsListView: View {
         ForEach(cardStore.cards) { card in
           CardThumbnailView(card: card)
             .onTapGesture {
+              viewState.selectedCard = card
               viewState.showAllCards.toggle()
             }
         }

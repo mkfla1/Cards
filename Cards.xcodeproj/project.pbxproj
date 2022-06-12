@@ -154,9 +154,9 @@
 		DC77775A2850B28300D796D6 /* Cards */ = {
 			isa = PBXGroup;
 			children = (
+				DC1421512850AF5F001087C3 /* CardsView.swift */,
 				DC7777622850DCBE00D796D6 /* CardList */,
 				DC7777612850DCAB00D796D6 /* SingleCard */,
-				DC1421512850AF5F001087C3 /* CardsView.swift */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
