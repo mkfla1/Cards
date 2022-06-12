@@ -19,6 +19,9 @@
 		DC34FFA2285327A800BC4C8E /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34FFA1285327A800BC4C8E /* ViewExtensions.swift */; };
 		DC6A59EE2855D68400059531 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A59ED2855D68400059531 /* PreviewData.swift */; };
 		DC6A59F02855D6C300059531 /* TextExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A59EF2855D6C300059531 /* TextExtensions.swift */; };
+		DC6A59F32855DBBC00059531 /* CardElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A59F22855DBBC00059531 /* CardElement.swift */; };
+		DC6A59F52855DC0100059531 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A59F42855DC0100059531 /* Card.swift */; };
+		DC6A59F72855DCDC00059531 /* CardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A59F62855DCDC00059531 /* CardStore.swift */; };
 		DC77775C2850BBEA00D796D6 /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC77775B2850BBEA00D796D6 /* CardDetailView.swift */; };
 		DC77775E2850D3D200D796D6 /* CardModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC77775D2850D3D200D796D6 /* CardModal.swift */; };
 		DC7777602850D43100D796D6 /* CardBottomToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC77775F2850D43000D796D6 /* CardBottomToolbar.swift */; };
@@ -44,6 +47,9 @@
 		DC34FFA1285327A800BC4C8E /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		DC6A59ED2855D68400059531 /* PreviewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 		DC6A59EF2855D6C300059531 /* TextExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExtensions.swift; sourceTree = "<group>"; };
+		DC6A59F22855DBBC00059531 /* CardElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardElement.swift; sourceTree = "<group>"; };
+		DC6A59F42855DC0100059531 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		DC6A59F62855DCDC00059531 /* CardStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStore.swift; sourceTree = "<group>"; };
 		DC77775B2850BBEA00D796D6 /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
 		DC77775D2850D3D200D796D6 /* CardModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModal.swift; sourceTree = "<group>"; };
 		DC77775F2850D43000D796D6 /* CardBottomToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBottomToolbar.swift; sourceTree = "<group>"; };
@@ -119,6 +125,7 @@
 		DC14214E2850AC7F001087C3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DC6A59F12855DBA400059531 /* Card */,
 				DC14214F2850AC9B001087C3 /* ViewState.swift */,
 				DC77775D2850D3D200D796D6 /* CardModal.swift */,
 				DCC5667E2851D36B00302348 /* Transform.swift */,
@@ -132,6 +139,16 @@
 				DCC566812851D93C00302348 /* Operators.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		DC6A59F12855DBA400059531 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				DC6A59F22855DBBC00059531 /* CardElement.swift */,
+				DC6A59F42855DC0100059531 /* Card.swift */,
+				DC6A59F62855DCDC00059531 /* CardStore.swift */,
+			);
+			path = Card;
 			sourceTree = "<group>";
 		};
 		DC77775A2850B28300D796D6 /* Cards */ = {
@@ -268,6 +285,8 @@
 				DC14214D2850AA5D001087C3 /* SingleCardView.swift in Sources */,
 				DC7777602850D43100D796D6 /* CardBottomToolbar.swift in Sources */,
 				DCCF239F28547E1900DDA2B6 /* CardToolBar.swift in Sources */,
+				DC6A59F32855DBBC00059531 /* CardElement.swift in Sources */,
+				DC6A59F72855DCDC00059531 /* CardStore.swift in Sources */,
 				DCC5667D2851D27600302348 /* ResizableView.swift in Sources */,
 				DC34FFA2285327A800BC4C8E /* ViewExtensions.swift in Sources */,
 				DCC982E028532F2C00BF2C2A /* Settings.swift in Sources */,
@@ -275,6 +294,7 @@
 				DCC566822851D93C00302348 /* Operators.swift in Sources */,
 				DC77775E2850D3D200D796D6 /* CardModal.swift in Sources */,
 				DC6A59EE2855D68400059531 /* PreviewData.swift in Sources */,
+				DC6A59F52855DC0100059531 /* Card.swift in Sources */,
 				DCC5667F2851D36B00302348 /* Transform.swift in Sources */,
 				DC6A59F02855D6C300059531 /* TextExtensions.swift in Sources */,
 				DC77775C2850BBEA00D796D6 /* CardDetailView.swift in Sources */,
