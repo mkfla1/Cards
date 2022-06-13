@@ -47,6 +47,9 @@ struct ResizableView: ViewModifier {
       .scaleEffect(scale)
       .gesture(dragGesture)
       .gesture(SimultaneousGesture(rotationGesture, scaleGesture))
+      .onAppear {
+        prevOffset = transform.offset
+      }
   }
 }
 
