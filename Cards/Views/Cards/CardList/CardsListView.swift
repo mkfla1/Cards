@@ -20,6 +20,11 @@ struct CardsListView: View {
               viewState.selectedCard = card
               viewState.showAllCards.toggle()
             }
+            .contextMenu {
+              Button(action: { cardStore.remove(card) }) {
+                Label("删除", systemImage: "trash")
+              }
+            }
         }
       }
     }
