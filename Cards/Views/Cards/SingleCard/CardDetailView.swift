@@ -10,6 +10,7 @@ import SwiftUI
 struct CardDetailView: View {
   @EnvironmentObject var viewState: ViewState
   @State private var cardModal: CardModal?
+  @Binding var card: Card
   
   var content: some View {
     ZStack {
@@ -37,7 +38,7 @@ struct CardDetailView: View {
 
 struct CardDetailView_Previews: PreviewProvider {
   static var previews: some View {
-    CardDetailView()
+    CardDetailView(card: .constant(initialCards[0]))
       .environmentObject(ViewState())
   }
 }

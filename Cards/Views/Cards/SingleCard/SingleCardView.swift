@@ -9,13 +9,17 @@ import SwiftUI
 
 struct SingleCardView: View {
   @EnvironmentObject var viewState: ViewState
+  @EnvironmentObject var cardStore: CardStore
   
   var body: some View {
-    NavigationView {
-      CardDetailView()
-        .navigationBarTitleDisplayMode(.inline)
+    if let selectedCard = viewState.selectedCard,
+       let index = cardStore.index(card: selectedCard) {
+      NavigationView {
+        CardDetailView(card: $cardStore.cards[index])
+          .navigationBarTitleDisplayMode(.inline)
+      }
+      .navigationViewStyle(.stack)
     }
-    .navigationViewStyle(.stack)
   }
 }
 
@@ -23,5 +27,6 @@ struct SingleCardView_Previews: PreviewProvider {
   static var previews: some View {
     SingleCardView()
       .environmentObject(ViewState())
+      .environmentObject(CardStore(defaultData: true))
   }
 }
