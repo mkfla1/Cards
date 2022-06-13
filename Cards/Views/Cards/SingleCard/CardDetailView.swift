@@ -18,6 +18,11 @@ struct CardDetailView: View {
         .edgesIgnoringSafeArea(.all)
       ForEach(card.elements, id: \.id) { element in
         CardElementView(element: element)
+          .contextMenu {
+            Button(action: { card.remove(element)}) {
+              Label("删除", systemImage: "trash")
+            }
+          }
           .resizableView(transform: bindingTransform(for: element))
           .frame(width: element.transform.size.width,
                  height: element.transform.size.height)
