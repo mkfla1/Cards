@@ -16,6 +16,7 @@
 		DC14214D2850AA5D001087C3 /* SingleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14214C2850AA5D001087C3 /* SingleCardView.swift */; };
 		DC1421502850AC9B001087C3 /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14214F2850AC9B001087C3 /* ViewState.swift */; };
 		DC1421522850AF5F001087C3 /* CardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1421512850AF5F001087C3 /* CardsView.swift */; };
+		DC1CACEB285A2297004CC4F6 /* Stickers in Resources */ = {isa = PBXBuildFile; fileRef = DC1CACEA285A2297004CC4F6 /* Stickers */; };
 		DC24D180285755EF00A33ED1 /* CardElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24D17F285755EF00A33ED1 /* CardElementView.swift */; };
 		DC34FFA2285327A800BC4C8E /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34FFA1285327A800BC4C8E /* ViewExtensions.swift */; };
 		DC6A59EE2855D68400059531 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A59ED2855D68400059531 /* PreviewData.swift */; };
@@ -45,6 +46,7 @@
 		DC14214C2850AA5D001087C3 /* SingleCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCardView.swift; sourceTree = "<group>"; };
 		DC14214F2850AC9B001087C3 /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
 		DC1421512850AF5F001087C3 /* CardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsView.swift; sourceTree = "<group>"; };
+		DC1CACEA285A2297004CC4F6 /* Stickers */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Stickers; path = "../../book code/swiftUI_apprentice/16-adding-assets-to-your-app/assets/Stickers"; sourceTree = "<group>"; };
 		DC24D17F285755EF00A33ED1 /* CardElementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardElementView.swift; sourceTree = "<group>"; };
 		DC2568742859F95F00CDDC6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DC34FFA1285327A800BC4C8E /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				DC14213928509C9E001087C3 /* CardsApp.swift */,
 				DC14213B28509C9E001087C3 /* ContentView.swift */,
 				DC14213D28509CA0001087C3 /* Assets.xcassets */,
+				DC1CACEA285A2297004CC4F6 /* Stickers */,
 				DC14213F28509CA0001087C3 /* Preview Content */,
 			);
 			path = Cards;
@@ -271,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC14214128509CA0001087C3 /* Preview Assets.xcassets in Resources */,
+				DC1CACEB285A2297004CC4F6 /* Stickers in Resources */,
 				DC14213E28509CA0001087C3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
