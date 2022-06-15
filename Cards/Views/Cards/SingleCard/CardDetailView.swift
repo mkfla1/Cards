@@ -33,6 +33,14 @@ struct CardDetailView: View {
   var body: some View {
     content
       .modifier(CardToolBar(cardModal: $cardModal))
+      .sheet(item: $cardModal) { item in
+        switch item {
+        case .stickerPicker:
+          EmptyView()
+        default:
+          EmptyView()
+        }
+      }
   }
   
   func bindingTransform(for element: CardElement) -> Binding<Transform> {
