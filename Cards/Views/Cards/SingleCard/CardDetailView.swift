@@ -36,7 +36,7 @@ struct CardDetailView: View {
       .sheet(item: $cardModal) { item in
         switch item {
         case .stickerPicker:
-          EmptyView()
+          StickerPicker()
         default:
           EmptyView()
         }
