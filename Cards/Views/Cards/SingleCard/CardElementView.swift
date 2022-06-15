@@ -36,9 +36,8 @@ struct TextElementView: View {
   var body: some View {
     if !element.text.isEmpty {
       Text(element.text)
-        .font(.custom(element.textFont, size: 200))
         .foregroundColor(element.textColor)
-        .scalableText()
+        .scalableText(font: .custom(element.textFont, size: 200))
     }
   }
 }
