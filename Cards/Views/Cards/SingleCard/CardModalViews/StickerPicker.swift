@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct StickerPicker: View {
+  @Environment(\.presentationMode) var presentationMode
   @State private var stickerNames: [String] = []
+  @Binding var stickerImage: UIImage?
+  
   let columns = [
     GridItem(.adaptive(minimum: 120), spacing: 10)
   ]
@@ -20,6 +23,10 @@ struct StickerPicker: View {
           Image(uiImage: image(from: path))
             .resizable()
             .aspectRatio(contentMode: .fit)
+            .onTapGesture {
+              stickerImage = image(from: path)
+              presentationMode.wrappedValue.dismiss()
+            }
         }
       }
     }
@@ -70,9 +77,7 @@ struct StickerPicker: View {
 struct StickerPicker_Previews: PreviewProvider {
   static var previews: some View {
     Group {
-      StickerPicker()
-      StickerPicker()
-        .previewLayout(.fixed(width: 896, height: 414))
+      StickerPicker(stickerImage: .constant(UIImage()))
     }
   }
 }

@@ -10,6 +10,7 @@ import SwiftUI
 struct CardDetailView: View {
   @EnvironmentObject var viewState: ViewState
   @State private var cardModal: CardModal?
+  @State private var stickerImage: UIImage?
   @Binding var card: Card
   
   var content: some View {
@@ -36,7 +37,13 @@ struct CardDetailView: View {
       .sheet(item: $cardModal) { item in
         switch item {
         case .stickerPicker:
-          StickerPicker()
+          StickerPicker(stickerImage: $stickerImage)
+            .onDisappear {
+              if let stickerImage = stickerImage {
+                card.addElement(uiImage: stickerImage)
+              }
+              stickerImage = nil
+            }
         default:
           EmptyView()
         }
