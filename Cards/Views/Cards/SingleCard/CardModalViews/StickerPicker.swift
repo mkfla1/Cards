@@ -12,10 +12,12 @@ struct StickerPicker: View {
   
   var body: some View {
     ScrollView {
-      ForEach(stickerNames, id: \.self) { path in
-        Image(uiImage: image(from: path))
-          .resizable()
-          .aspectRatio(contentMode: .fit)
+      LazyVStack {
+        ForEach(stickerNames, id: \.self) { path in
+          Image(uiImage: image(from: path))
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+        }
       }
     }
     .onAppear {
