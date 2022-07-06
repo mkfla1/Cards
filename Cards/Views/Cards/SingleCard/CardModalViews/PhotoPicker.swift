@@ -9,17 +9,6 @@ import SwiftUI
 import PhotosUI
 
 struct PhotoPicker: UIViewControllerRepresentable {
-  
-  class PhotosCoordinator: NSObject, PHPickerViewControllerDelegate {
-    var parent: PhotoPicker
-    init(parent: PhotoPicker) {
-      self.parent = parent
-    }
-    
-    func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
-    }
-  }
-  
   @Binding var images: [UIImage]
   
   func makeUIViewController(context: Context) -> some UIViewController {
@@ -37,6 +26,17 @@ struct PhotoPicker: UIViewControllerRepresentable {
   
   func makeCoordinator() -> PhotosCoordinator {
     PhotosCoordinator(parent: self)
+  }
+  
+  class PhotosCoordinator: NSObject, PHPickerViewControllerDelegate {
+    var parent: PhotoPicker
+    init(parent: PhotoPicker) {
+      self.parent = parent
+    }
+    
+    func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
+      
+    }
   }
 }
 
