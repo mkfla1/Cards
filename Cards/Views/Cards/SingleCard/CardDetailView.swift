@@ -34,20 +34,7 @@ struct CardDetailView: View {
   
   var body: some View {
     content
-      .onDrop(of: [.image], isTargeted: nil) { providers in
-        for item in providers {
-          if item.canLoadObject(ofClass: UIImage.self) {
-            item.loadObject(ofClass: UIImage.self) { image, _ in
-              if let image = image as? UIImage {
-                DispatchQueue.main.async {
-                  card.addElement(uiImage: image)
-                }
-              }
-            }
-          }
-        }
-        return true
-      }
+      .onDrop(of: [.image], delegate: CardDrop(card: $card))
       .modifier(CardToolBar(cardModal: $cardModal))
       .sheet(item: $cardModal) { item in
         switch item {
