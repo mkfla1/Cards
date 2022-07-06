@@ -6,22 +6,44 @@
 //
 
 import SwiftUI
+import PhotosUI
 
-struct PhotoPicker: UIViewRepresentable {
-  func makeUIView(context: Context) -> UILabel {
-    let label = UILabel()
-    label.text = "我是个label"
-    return label
+struct PhotoPicker: UIViewControllerRepresentable {
+  
+  class PhotosCoordinator: NSObject, PHPickerViewControllerDelegate {
+    var parent: PhotoPicker
+    init(parent: PhotoPicker) {
+      self.parent = parent
+    }
+    
+    func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
+    }
   }
   
-  func updateUIView(_ uiView: UIViewType, context: Context) {
+  @Binding var images: [UIImage]
+  
+  func makeUIViewController(context: Context) -> some UIViewController {
+    var config = PHPickerConfiguration()
+    config.filter = .images
+    config.selectionLimit = 0
+    
+    let picker = PHPickerViewController(configuration: config)
+    picker.delegate = context.coordinator
+    return picker
+  }
+  
+  func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
+  }
+  
+  func makeCoordinator() -> PhotosCoordinator {
+    PhotosCoordinator(parent: self)
   }
 }
 
 struct PhotoPicker_Previews: PreviewProvider {
   static var previews: some View {
 //    Text("hello")
-    PhotoPicker()
+    PhotoPicker(images: .constant([UIImage]()))
       .background(Color.yellow)
   }
 }
