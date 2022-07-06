@@ -28,6 +28,7 @@
 		DC77775C2850BBEA00D796D6 /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC77775B2850BBEA00D796D6 /* CardDetailView.swift */; };
 		DC77775E2850D3D200D796D6 /* CardModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC77775D2850D3D200D796D6 /* CardModal.swift */; };
 		DC7777602850D43100D796D6 /* CardBottomToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC77775F2850D43000D796D6 /* CardBottomToolbar.swift */; };
+		DC8D45C228754658009B3056 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8D45C128754658009B3056 /* PhotoPicker.swift */; };
 		DCC5667D2851D27600302348 /* ResizableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC5667C2851D27600302348 /* ResizableView.swift */; };
 		DCC5667F2851D36B00302348 /* Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC5667E2851D36B00302348 /* Transform.swift */; };
 		DCC566822851D93C00302348 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC566812851D93C00302348 /* Operators.swift */; };
@@ -60,6 +61,7 @@
 		DC77775B2850BBEA00D796D6 /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
 		DC77775D2850D3D200D796D6 /* CardModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModal.swift; sourceTree = "<group>"; };
 		DC77775F2850D43000D796D6 /* CardBottomToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBottomToolbar.swift; sourceTree = "<group>"; };
+		DC8D45C128754658009B3056 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
 		DCC5667C2851D27600302348 /* ResizableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizableView.swift; sourceTree = "<group>"; };
 		DCC5667E2851D36B00302348 /* Transform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transform.swift; sourceTree = "<group>"; };
 		DCC566812851D93C00302348 /* Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				DC1CACED285A250D004CC4F6 /* StickerPicker.swift */,
+				DC8D45C128754658009B3056 /* PhotoPicker.swift */,
 			);
 			path = CardModalViews;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				DCC5667F2851D36B00302348 /* Transform.swift in Sources */,
 				DC6A59F02855D6C300059531 /* TextExtensions.swift in Sources */,
 				DC77775C2850BBEA00D796D6 /* CardDetailView.swift in Sources */,
+				DC8D45C228754658009B3056 /* PhotoPicker.swift in Sources */,
 				DCCF239C285476A000DDA2B6 /* ColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
