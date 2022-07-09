@@ -13,7 +13,13 @@ struct Shapes: View {
     
     VStack {
       currentShape
+        .stroke(
+          Color.primary,
+          style: StrokeStyle(
+            lineWidth: 10,
+            lineJoin: .round))
         .aspectRatio(1, contentMode: .fit)
+        .padding()
         .background(Color.yellow)
     }
   }
