@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Shapes: View {
   var body: some View {
-    let currentShape = Triangle()
+    let currentShape = Cone()
     
     VStack {
       currentShape
@@ -29,6 +29,23 @@ struct Triangle: Shape {
       CGPoint(x: width * 0.87, y: height * 0.47),
       CGPoint(x: width * 0.4, y: height * 0.93)
     ])
+    path.closeSubpath()
+    return path
+  }
+}
+
+struct Cone: Shape {
+  func path(in rect: CGRect) -> Path {
+    var path = Path()
+    let radius = min(rect.midX, rect.midY)
+    path.addArc(
+      center: CGPoint(x: rect.midX, y: rect.midY),
+      radius: radius,
+      startAngle: Angle(degrees: 0),
+      endAngle: Angle(degrees: 180),
+      clockwise: true)
+    path.addLine(to: CGPoint(x: rect.midX, y: rect.height))
+    path.addLine(to: CGPoint(x: rect.midX + radius, y: rect.midY))
     path.closeSubpath()
     return path
   }
