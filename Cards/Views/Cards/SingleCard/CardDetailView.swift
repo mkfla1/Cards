@@ -18,8 +18,13 @@ struct CardDetailView: View {
     ZStack {
       card.backgroundColor
         .edgesIgnoringSafeArea(.all)
+        .onTapGesture {
+          viewState.selectedElement = nil
+        }
       ForEach(card.elements, id: \.id) { element in
-        CardElementView(element: element)
+        CardElementView(
+          element: element,
+          selected: viewState.selectedElement?.id == element.id)
           .contextMenu {
             Button(action: { card.remove(element)}) {
               Label("删除", systemImage: "trash")
@@ -28,6 +33,9 @@ struct CardDetailView: View {
           .resizableView(transform: bindingTransform(for: element))
           .frame(width: element.transform.size.width,
                  height: element.transform.size.height)
+          .onTapGesture {
+            viewState.selectedElement = element
+          }
       }
     }
   }
