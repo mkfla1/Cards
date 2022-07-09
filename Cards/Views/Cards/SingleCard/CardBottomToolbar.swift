@@ -30,6 +30,7 @@ struct ToolbarButtonView: View {
 }
 
 struct CardBottomToolbar: View {
+  @EnvironmentObject var viewState: ViewState
   @Binding var cardModal: CardModal?
   
   var body: some View {
@@ -40,6 +41,9 @@ struct CardBottomToolbar: View {
       Button(action: { cardModal = .framePicker }) {
         ToolbarButtonView(cardModal: .framePicker)
       }
+      .disabled(
+        viewState.selectedElement == nil
+        || !(viewState.selectedElement.self is ImageElement))
       Button(action: { cardModal = .stickerPicker }) {
         ToolbarButtonView(cardModal: .stickerPicker)
       }
