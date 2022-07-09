@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Shapes: View {
   var body: some View {
-    let currentShape = Cone()
+    let currentShape = Lens()
     
     VStack {
       currentShape
@@ -46,6 +46,21 @@ struct Cone: Shape {
       clockwise: true)
     path.addLine(to: CGPoint(x: rect.midX, y: rect.height))
     path.addLine(to: CGPoint(x: rect.midX + radius, y: rect.midY))
+    path.closeSubpath()
+    return path
+  }
+}
+
+struct Lens: Shape {
+  func path(in rect: CGRect) -> Path {
+    var path = Path()
+    path.move(to: CGPoint(x: 0, y: rect.midY))
+    path.addQuadCurve(
+      to: CGPoint(x: rect.width, y: rect.midY),
+      control: CGPoint(x: rect.midX, y: 0))
+    path.addQuadCurve(
+      to: CGPoint(x: 0, y: rect.midY),
+      control: CGPoint(x: rect.midX, y: rect.height))
     path.closeSubpath()
     return path
   }
