@@ -30,6 +30,8 @@
 		DC7777602850D43100D796D6 /* CardBottomToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC77775F2850D43000D796D6 /* CardBottomToolbar.swift */; };
 		DC8D45C228754658009B3056 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8D45C128754658009B3056 /* PhotoPicker.swift */; };
 		DC8D45C428758B8D009B3056 /* CardDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8D45C328758B8D009B3056 /* CardDrop.swift */; };
+		DC9F623F287A9EE500B8B96B /* FramePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9F623E287A9EE500B8B96B /* FramePicker.swift */; };
+		DC9F6241287AA6AF00B8B96B /* AnyShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9F6240287AA6AF00B8B96B /* AnyShape.swift */; };
 		DCA4B67A2879D9670085ABCD /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA4B6792879D9670085ABCD /* Shapes.swift */; };
 		DCC5667D2851D27600302348 /* ResizableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC5667C2851D27600302348 /* ResizableView.swift */; };
 		DCC5667F2851D36B00302348 /* Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC5667E2851D36B00302348 /* Transform.swift */; };
@@ -65,6 +67,8 @@
 		DC77775F2850D43000D796D6 /* CardBottomToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBottomToolbar.swift; sourceTree = "<group>"; };
 		DC8D45C128754658009B3056 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
 		DC8D45C328758B8D009B3056 /* CardDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDrop.swift; sourceTree = "<group>"; };
+		DC9F623E287A9EE500B8B96B /* FramePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FramePicker.swift; sourceTree = "<group>"; };
+		DC9F6240287AA6AF00B8B96B /* AnyShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyShape.swift; sourceTree = "<group>"; };
 		DCA4B6792879D9670085ABCD /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
 		DCC5667C2851D27600302348 /* ResizableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizableView.swift; sourceTree = "<group>"; };
 		DCC5667E2851D36B00302348 /* Transform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transform.swift; sourceTree = "<group>"; };
@@ -141,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				DCA4B6792879D9670085ABCD /* Shapes.swift */,
+				DC9F6240287AA6AF00B8B96B /* AnyShape.swift */,
 				DC6A59F12855DBA400059531 /* Card */,
 				DC14214F2850AC9B001087C3 /* ViewState.swift */,
 				DC77775D2850D3D200D796D6 /* CardModal.swift */,
@@ -154,6 +159,7 @@
 			children = (
 				DC1CACED285A250D004CC4F6 /* StickerPicker.swift */,
 				DC8D45C128754658009B3056 /* PhotoPicker.swift */,
+				DC9F623E287A9EE500B8B96B /* FramePicker.swift */,
 			);
 			path = CardModalViews;
 			sourceTree = "<group>";
@@ -323,9 +329,11 @@
 				DCC982E028532F2C00BF2C2A /* Settings.swift in Sources */,
 				DC14214B2850A10B001087C3 /* CardThumbnailView.swift in Sources */,
 				DCC566822851D93C00302348 /* Operators.swift in Sources */,
+				DC9F623F287A9EE500B8B96B /* FramePicker.swift in Sources */,
 				DC77775E2850D3D200D796D6 /* CardModal.swift in Sources */,
 				DC6A59EE2855D68400059531 /* PreviewData.swift in Sources */,
 				DC1CACEE285A250D004CC4F6 /* StickerPicker.swift in Sources */,
+				DC9F6241287AA6AF00B8B96B /* AnyShape.swift in Sources */,
 				DC24D180285755EF00A33ED1 /* CardElementView.swift in Sources */,
 				DC6A59F52855DC0100059531 /* Card.swift in Sources */,
 				DCC5667F2851D36B00302348 /* Transform.swift in Sources */,
