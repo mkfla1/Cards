@@ -12,6 +12,7 @@ struct CardDetailView: View {
   @State private var cardModal: CardModal?
   @State private var stickerImage: UIImage?
   @State private var images = [UIImage]()
+  @State private var frame: AnyShape?
   @Binding var card: Card
   
   var content: some View {
@@ -61,6 +62,16 @@ struct CardDetailView: View {
                 card.addElement(uiImage: image)
               }
               images = []
+            }
+        case .framePicker:
+          FramePicker(frame: $frame)
+            .onDisappear {
+              if let frame = frame {
+                card.update(
+                  viewState.selectedElement,
+                  frame: frame)
+              }
+              frame = nil
             }
         default:
           EmptyView()
