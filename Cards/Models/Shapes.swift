@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Shapes: View {
   var body: some View {
-    let currentShape = Lens()
+    let currentShape = Heart()
     
     VStack {
       currentShape
@@ -30,7 +30,9 @@ extension Shapes {
     AnyShape(Circle()),
     AnyShape(Rectangle()),
     AnyShape(Cone()),
-    AnyShape(Lens())
+    AnyShape(Lens()),
+    AnyShape(RoundedRectangle(cornerRadius: 25)),
+    AnyShape(Heart()),
   ]
 }
 
@@ -80,6 +82,38 @@ struct Lens: Shape {
     return path
   }
 }
+
+struct Heart: Shape {
+  func path(in rect: CGRect) -> Path {
+    var path = Path()
+    let width = rect.width, height = rect.height
+    let radius = width / 4
+    path.move(to: CGPoint(x: rect.midX, y: height * 0.25))
+    path.addArc(
+      center: CGPoint(x: width / 4, y: height / 4),
+      radius: radius,
+      startAngle: Angle(degrees: 0),
+      endAngle: Angle(degrees: 180),
+      clockwise: true)
+    path.addCurve(
+      to: CGPoint(x: rect.midX, y: rect.height),
+      control1: CGPoint(x: rect.minX, y: rect.midY),
+      control2: CGPoint(x: rect.midX * 0.7, y: height * 0.9))
+    path.addCurve(
+      to: CGPoint(x: rect.maxX, y: rect.height * 0.25),
+      control1: CGPoint(x: rect.midX * 1.3, y: rect.height * 0.9),
+      control2: CGPoint(x: width, y: rect.midY))
+    path.addArc(
+      center: CGPoint(x: width * 3 / 4, y: height / 4),
+      radius: radius,
+      startAngle: Angle(degrees: 0),
+      endAngle: Angle(degrees: 180),
+      clockwise: true)
+    path.closeSubpath()
+    return path
+  }
+}
+
 
 struct Shapes_Previews: PreviewProvider {
   static var previews: some View {
