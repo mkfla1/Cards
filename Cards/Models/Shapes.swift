@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Shapes: View {
   var body: some View {
-    let currentShape = Diamond()
+    let currentShape = Cloud()
     
     VStack {
       currentShape
@@ -35,7 +35,7 @@ extension Shapes {
     AnyShape(Heart()),
     AnyShape(Chevron()),
     AnyShape(Diamond()),
-    
+    AnyShape(Cloud()),
   ]
 }
 
@@ -147,6 +147,33 @@ struct Diamond: Shape {
   }
 }
 
+struct Cloud: Shape {
+  func path(in rect: CGRect) -> Path {
+    Path { path in
+      let width = rect.width, height = rect.height
+      path.move(to: CGPoint(x: width * 0.2, y: height * 0.2))
+      path.addQuadCurve(
+        to: CGPoint(x: width * 0.6, y: height * 0.1),
+        control: CGPoint(x: width * 0.32, y: height * -0.12))
+      path.addQuadCurve(
+        to: CGPoint(x: width * 0.85, y: height * 0.2),
+        control: CGPoint(x: width * 0.8, y: height * 0.05))
+      path.addQuadCurve(
+        to: CGPoint(x: width * 0.9, y: height * 0.6),
+        control: CGPoint(x: width * 1.1, y: height * 0.35))
+      path.addQuadCurve(
+        to: CGPoint(x: width * 0.65, y: height * 0.9),
+        control: CGPoint(x: width, y: height * 0.95))
+      path.addQuadCurve(
+        to: CGPoint(x: width * 0.15, y: height * 0.7),
+        control: CGPoint(x: width * 0.2, y: height * 1.1))
+      path.addQuadCurve(
+        to: CGPoint(x: width * 0.2, y: height * 0.2),
+        control: CGPoint(x: width * -0.15, y: height * 0.45))
+      path.closeSubpath()
+    }
+  }
+}
 
 struct Shapes_Previews: PreviewProvider {
   static var previews: some View {
