@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Shapes: View {
   var body: some View {
-    let currentShape = Chevron()
+    let currentShape = Diamond()
     
     VStack {
       currentShape
@@ -34,6 +34,8 @@ extension Shapes {
     AnyShape(RoundedRectangle(cornerRadius: 25)),
     AnyShape(Heart()),
     AnyShape(Chevron()),
+    AnyShape(Diamond()),
+    
   ]
 }
 
@@ -128,6 +130,20 @@ struct Chevron: Shape {
     ])
     path.closeSubpath()
     return path
+  }
+}
+
+struct Diamond: Shape {
+  func path(in rect: CGRect) -> Path {
+    Path { path in
+      path.addLines([
+        CGPoint(x: rect.width * 0.5, y: 0),
+        CGPoint(x: rect.width, y: rect.height * 0.5),
+        CGPoint(x: rect.width * 0.5, y: rect.height),
+        CGPoint(x: 0, y: rect.height * 0.5)
+      ])
+      path.closeSubpath()
+    }
   }
 }
 
