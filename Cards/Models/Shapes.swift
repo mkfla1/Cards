@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Shapes: View {
   var body: some View {
-    let currentShape = Cloud()
+    let currentShape = Polygon(sides: 8)
     
     VStack {
       currentShape
@@ -36,6 +36,8 @@ extension Shapes {
     AnyShape(Chevron()),
     AnyShape(Diamond()),
     AnyShape(Cloud()),
+    AnyShape(Polygon(sides: 6)),
+    AnyShape(Polygon(sides: 8))
   ]
 }
 
@@ -170,6 +172,29 @@ struct Cloud: Shape {
       path.addQuadCurve(
         to: CGPoint(x: width * 0.2, y: height * 0.2),
         control: CGPoint(x: width * -0.15, y: height * 0.45))
+      path.closeSubpath()
+    }
+  }
+}
+
+struct Polygon: Shape {
+  let sides: Int
+  
+  func path(in rect: CGRect) -> Path {
+    Path { path in
+      let radius = min(rect.midX, rect.midY)
+      let angle = CGFloat.pi * 2 / CGFloat(sides)
+      let points: [CGPoint] = (0..<sides).map { index in
+        let currentAngle = angle * CGFloat(index)
+        let x = radius * cos(currentAngle) + radius
+        let y = radius * sin(currentAngle) + radius
+        return CGPoint(x: x, y: y)
+      }
+      
+      path.move(to: points[0])
+      for i in 1..<points.count {
+        path.addLine(to: points[i])
+      }
       path.closeSubpath()
     }
   }
