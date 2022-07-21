@@ -20,6 +20,7 @@
 		DC1CACEE285A250D004CC4F6 /* StickerPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1CACED285A250D004CC4F6 /* StickerPicker.swift */; };
 		DC24D180285755EF00A33ED1 /* CardElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC24D17F285755EF00A33ED1 /* CardElementView.swift */; };
 		DC34FFA2285327A800BC4C8E /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34FFA1285327A800BC4C8E /* ViewExtensions.swift */; };
+		DC4DB08028892E3600D2B24F /* FileManagerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4DB07F28892E3600D2B24F /* FileManagerExtensions.swift */; };
 		DC6A59EE2855D68400059531 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A59ED2855D68400059531 /* PreviewData.swift */; };
 		DC6A59F02855D6C300059531 /* TextExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A59EF2855D6C300059531 /* TextExtensions.swift */; };
 		DC6A59F32855DBBC00059531 /* CardElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6A59F22855DBBC00059531 /* CardElement.swift */; };
@@ -57,6 +58,7 @@
 		DC24D17F285755EF00A33ED1 /* CardElementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardElementView.swift; sourceTree = "<group>"; };
 		DC2568742859F95F00CDDC6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DC34FFA1285327A800BC4C8E /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		DC4DB07F28892E3600D2B24F /* FileManagerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerExtensions.swift; sourceTree = "<group>"; };
 		DC6A59ED2855D68400059531 /* PreviewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 		DC6A59EF2855D6C300059531 /* TextExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExtensions.swift; sourceTree = "<group>"; };
 		DC6A59F22855DBBC00059531 /* CardElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardElement.swift; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 				DC34FFA1285327A800BC4C8E /* ViewExtensions.swift */,
 				DCCF239B285476A000DDA2B6 /* ColorExtensions.swift */,
 				DC6A59EF2855D6C300059531 /* TextExtensions.swift */,
+				DC4DB07F28892E3600D2B24F /* FileManagerExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				DC1CACEE285A250D004CC4F6 /* StickerPicker.swift in Sources */,
 				DC9F6241287AA6AF00B8B96B /* AnyShape.swift in Sources */,
 				DC24D180285755EF00A33ED1 /* CardElementView.swift in Sources */,
+				DC4DB08028892E3600D2B24F /* FileManagerExtensions.swift in Sources */,
 				DC6A59F52855DC0100059531 /* Card.swift in Sources */,
 				DCC5667F2851D36B00302348 /* Transform.swift in Sources */,
 				DC6A59F02855D6C300059531 /* TextExtensions.swift in Sources */,
