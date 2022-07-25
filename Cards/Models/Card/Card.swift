@@ -20,6 +20,7 @@ struct Card: Identifiable {
     if let index = element.index(in: elements) {
       elements.remove(at: index)
     }
+    save()
   }
   
   mutating func addElement(uiImage: UIImage) {
@@ -28,6 +29,7 @@ struct Card: Identifiable {
       image: Image(uiImage: uiImage),
       imageFilename: imageFilename)
     elements.append(element)
+    save()
   }
   
   mutating func update(_ element: CardElement?, frame: AnyShape) {
@@ -37,10 +39,22 @@ struct Card: Identifiable {
       newElement.frame = frame
       elements[index] = newElement
     }
+    save()
   }
   
   func save() {
-    print("Saving data")
+    do {
+      let encoder = JSONEncoder()
+      encoder.outputFormatting = .prettyPrinted
+      
+      let data = try encoder.encode(self)
+      let filename = "\(id).rwcard"
+      if let url = FileManager.documentURL?.appendingPathComponent(filename) {
+        try data.write(to: url)
+      }
+    } catch {
+      print(error.localizedDescription)
+    }
   }
 }
 
