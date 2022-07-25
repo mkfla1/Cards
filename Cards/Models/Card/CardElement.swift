@@ -65,3 +65,26 @@ struct TextElement: CardElement {
   var textColor = Color.black
   var textFont = "San Fransisco"
 }
+
+extension TextElement: Codable {
+  enum CodingKeys: CodingKey {
+    case transform, text, textColor, textFont
+  }
+  
+  init(from decoder: Decoder) throws {
+    let container = try decoder.container(keyedBy: CodingKeys.self)
+    transform = try container.decode(Transform.self, forKey: .transform)
+    text = try container.decode(String.self, forKey: .text)
+    let textColorComponents = try container.decode([CGFloat].self, forKey: .textColor)
+    textColor = Color.color(components: textColorComponents)
+    textFont = try container.decode(String.self, forKey: .textFont)
+  }
+  
+  func encode(to encoder: Encoder) throws {
+    var container = encoder.container(keyedBy: CodingKeys.self)
+    try container.encode(transform, forKey: .transform)
+    try container.encode(text, forKey: .text)
+    try container.encode(textColor.colorComponents(), forKey: .textColor)
+    try container.encode(textFont, forKey: .textFont)
+  }
+}

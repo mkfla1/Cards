@@ -42,6 +42,7 @@
 		DCCF239F28547E1900DDA2B6 /* CardToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCF239E28547E1900DDA2B6 /* CardToolBar.swift */; };
 		DCE46D01288E33DF007E1661 /* AngleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE46D00288E33DF007E1661 /* AngleExtensions.swift */; };
 		DCE46D03288E3DF1007E1661 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE46D02288E3DF1007E1661 /* UIImageExtensions.swift */; };
+		DCE46D07288EB511007E1661 /* TextPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE46D06288EB511007E1661 /* TextPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		DCCF239E28547E1900DDA2B6 /* CardToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardToolBar.swift; sourceTree = "<group>"; };
 		DCE46D00288E33DF007E1661 /* AngleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngleExtensions.swift; sourceTree = "<group>"; };
 		DCE46D02288E3DF1007E1661 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		DCE46D06288EB511007E1661 /* TextPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 				DC1CACED285A250D004CC4F6 /* StickerPicker.swift */,
 				DC8D45C128754658009B3056 /* PhotoPicker.swift */,
 				DC9F623E287A9EE500B8B96B /* FramePicker.swift */,
+				DCE46D06288EB511007E1661 /* TextPicker.swift */,
 			);
 			path = CardModalViews;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				DC9F623F287A9EE500B8B96B /* FramePicker.swift in Sources */,
 				DC77775E2850D3D200D796D6 /* CardModal.swift in Sources */,
 				DC6A59EE2855D68400059531 /* PreviewData.swift in Sources */,
+				DCE46D07288EB511007E1661 /* TextPicker.swift in Sources */,
 				DC1CACEE285A250D004CC4F6 /* StickerPicker.swift in Sources */,
 				DC9F6241287AA6AF00B8B96B /* AnyShape.swift in Sources */,
 				DC24D180285755EF00A33ED1 /* CardElementView.swift in Sources */,
