@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct CardsApp: App {
   @StateObject private var viewState = ViewState()
-  @StateObject private var cardStore = CardStore(defaultData: true)
+  @StateObject private var cardStore = CardStore()
   
   var body: some Scene {
     WindowGroup {
