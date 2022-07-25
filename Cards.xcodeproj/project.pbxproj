@@ -41,6 +41,7 @@
 		DCCF239C285476A000DDA2B6 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCF239B285476A000DDA2B6 /* ColorExtensions.swift */; };
 		DCCF239F28547E1900DDA2B6 /* CardToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCF239E28547E1900DDA2B6 /* CardToolBar.swift */; };
 		DCE46D01288E33DF007E1661 /* AngleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE46D00288E33DF007E1661 /* AngleExtensions.swift */; };
+		DCE46D03288E3DF1007E1661 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE46D02288E3DF1007E1661 /* UIImageExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		DCCF239B285476A000DDA2B6 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		DCCF239E28547E1900DDA2B6 /* CardToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardToolBar.swift; sourceTree = "<group>"; };
 		DCE46D00288E33DF007E1661 /* AngleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngleExtensions.swift; sourceTree = "<group>"; };
+		DCE46D02288E3DF1007E1661 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +228,7 @@
 				DC6A59EF2855D6C300059531 /* TextExtensions.swift */,
 				DC4DB07F28892E3600D2B24F /* FileManagerExtensions.swift */,
 				DCE46D00288E33DF007E1661 /* AngleExtensions.swift */,
+				DCE46D02288E3DF1007E1661 /* UIImageExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				DC1421522850AF5F001087C3 /* CardsView.swift in Sources */,
 				DC14213C28509C9E001087C3 /* ContentView.swift in Sources */,
 				DC14214928509E6E001087C3 /* CardsListView.swift in Sources */,
+				DCE46D03288E3DF1007E1661 /* UIImageExtensions.swift in Sources */,
 				DC1421502850AC9B001087C3 /* ViewState.swift in Sources */,
 				DC14213A28509C9E001087C3 /* CardsApp.swift in Sources */,
 				DC14214D2850AA5D001087C3 /* SingleCardView.swift in Sources */,
