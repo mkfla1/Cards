@@ -40,6 +40,7 @@
 		DCC982E028532F2C00BF2C2A /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC982DF28532F2C00BF2C2A /* Settings.swift */; };
 		DCCF239C285476A000DDA2B6 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCF239B285476A000DDA2B6 /* ColorExtensions.swift */; };
 		DCCF239F28547E1900DDA2B6 /* CardToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCF239E28547E1900DDA2B6 /* CardToolBar.swift */; };
+		DCE46D01288E33DF007E1661 /* AngleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE46D00288E33DF007E1661 /* AngleExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,7 @@
 		DCC982DF28532F2C00BF2C2A /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		DCCF239B285476A000DDA2B6 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		DCCF239E28547E1900DDA2B6 /* CardToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardToolBar.swift; sourceTree = "<group>"; };
+		DCE46D00288E33DF007E1661 /* AngleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngleExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +225,7 @@
 				DCCF239B285476A000DDA2B6 /* ColorExtensions.swift */,
 				DC6A59EF2855D6C300059531 /* TextExtensions.swift */,
 				DC4DB07F28892E3600D2B24F /* FileManagerExtensions.swift */,
+				DCE46D00288E33DF007E1661 /* AngleExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				DC77775C2850BBEA00D796D6 /* CardDetailView.swift in Sources */,
 				DC8D45C228754658009B3056 /* PhotoPicker.swift in Sources */,
 				DCCF239C285476A000DDA2B6 /* ColorExtensions.swift in Sources */,
+				DCE46D01288E33DF007E1661 /* AngleExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
